@@ -29,25 +29,46 @@ namespace Ejercicio1___Guía4_MM200149
         /// </summary>
         private void InitializeComponent()
         {
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnsalir
             // 
-            this.btnsalir.Location = new System.Drawing.Point(484, 226);
+            this.btnsalir.Location = new System.Drawing.Point(556, 282);
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(228, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(297, 47);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Registro Estudiantes";
             // 
             // RegAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 376);
+            this.ClientSize = new System.Drawing.Size(719, 555);
+            this.Controls.Add(this.label4);
             this.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.Name = "RegAlumnos";
-            this.Text = "RegAlumnos";
+            this.Text = "v";
             this.Load += new System.EventHandler(this.RegAlumnos_Load);
+            this.Controls.SetChildIndex(this.btnsalir, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label4;
     }
 }

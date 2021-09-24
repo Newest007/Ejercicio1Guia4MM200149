@@ -26,5 +26,10 @@ namespace Ejercicio1___Guía4_MM200149
             }
 
         }
+
+        private void FormBase_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
