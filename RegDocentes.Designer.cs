@@ -51,6 +51,7 @@ namespace Ejercicio1___Guía4_MM200149
             this.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.Name = "RegDocentes";
             this.Text = "RegDocentes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RegDocentes_FormClosed);
             this.Load += new System.EventHandler(this.RegDocentes_Load);
             this.Controls.SetChildIndex(this.btnsalir, 0);
             this.Controls.SetChildIndex(this.btnlimpiar, 0);

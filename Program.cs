@@ -16,7 +16,7 @@ namespace Ejercicio1___Guía4_MM200149
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormBase());
+            Application.Run(new MenuPrincipal());
         }
     }
 }

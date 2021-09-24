@@ -37,7 +37,7 @@ namespace Ejercicio1___Guía4_MM200149
             this.btnsalir.Location = new System.Drawing.Point(556, 282);
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // button1
+            // btnlimpiar
             // 
             this.btnlimpiar.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -60,6 +60,7 @@ namespace Ejercicio1___Guía4_MM200149
             this.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.Name = "RegAlumnos";
             this.Text = "v";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RegAlumnos_FormClosed);
             this.Load += new System.EventHandler(this.RegAlumnos_Load);
             this.Controls.SetChildIndex(this.btnsalir, 0);
             this.Controls.SetChildIndex(this.btnlimpiar, 0);

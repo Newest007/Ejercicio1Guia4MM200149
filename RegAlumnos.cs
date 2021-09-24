@@ -31,5 +31,10 @@ namespace Ejercicio1___Guía4_MM200149
         {
            
         }
+
+        private void RegAlumnos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
