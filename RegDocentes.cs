@@ -10,26 +10,16 @@ using System.Windows.Forms;
 
 namespace Ejercicio1___Guía4_MM200149
 {
-    public partial class RegAlumnos : FormBase
+    public partial class RegDocentes : FormBase
     {
-        public RegAlumnos()
+        public RegDocentes()
         {
             InitializeComponent();
         }
 
-        private void RegAlumnos_Load(object sender, EventArgs e)
+        private void RegDocentes_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnsalir_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
         }
     }
 }

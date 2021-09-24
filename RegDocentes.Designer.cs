@@ -1,7 +1,7 @@
 ﻿
 namespace Ejercicio1___Guía4_MM200149
 {
-    partial class RegAlumnos
+    partial class RegDocentes
     {
         /// <summary>
         /// Required designer variable.
@@ -32,35 +32,26 @@ namespace Ejercicio1___Guía4_MM200149
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnsalir
-            // 
-            this.btnsalir.Location = new System.Drawing.Point(556, 282);
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
-            // 
-            // button1
-            // 
-            this.btnlimpiar.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(228, 40);
+            this.label4.Location = new System.Drawing.Point(264, 40);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(297, 47);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Registro Estudiantes";
+            this.label4.Size = new System.Drawing.Size(261, 47);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Registro Docentes";
             // 
-            // RegAlumnos
+            // RegDocentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 555);
+            this.ClientSize = new System.Drawing.Size(743, 559);
             this.Controls.Add(this.label4);
             this.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
-            this.Name = "RegAlumnos";
-            this.Text = "v";
-            this.Load += new System.EventHandler(this.RegAlumnos_Load);
+            this.Name = "RegDocentes";
+            this.Text = "RegDocentes";
+            this.Load += new System.EventHandler(this.RegDocentes_Load);
             this.Controls.SetChildIndex(this.btnsalir, 0);
             this.Controls.SetChildIndex(this.btnlimpiar, 0);
             this.Controls.SetChildIndex(this.btnmodificar, 0);

@@ -30,19 +30,19 @@ namespace Ejercicio1___Guía4_MM200149
         private void InitializeComponent()
         {
             this.btnsalir = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.grbxdatos = new System.Windows.Forms.GroupBox();
+            this.btnguardar = new System.Windows.Forms.Button();
+            this.btnmodificar = new System.Windows.Forms.Button();
+            this.btnlimpiar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvdatos = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtusuario = new System.Windows.Forms.TextBox();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
+            this.grbxdatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdatos)).BeginInit();
             this.SuspendLayout();
             // 
             // btnsalir
@@ -58,57 +58,58 @@ namespace Ejercicio1___Guía4_MM200149
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // groupBox1
+            // grbxdatos
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(49, 90);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(441, 264);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos";
+            this.grbxdatos.Controls.Add(this.txtcodigo);
+            this.grbxdatos.Controls.Add(this.txtusuario);
+            this.grbxdatos.Controls.Add(this.txtnombre);
+            this.grbxdatos.Controls.Add(this.label3);
+            this.grbxdatos.Controls.Add(this.label2);
+            this.grbxdatos.Controls.Add(this.label1);
+            this.grbxdatos.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbxdatos.Location = new System.Drawing.Point(49, 90);
+            this.grbxdatos.Name = "grbxdatos";
+            this.grbxdatos.Size = new System.Drawing.Size(441, 264);
+            this.grbxdatos.TabIndex = 5;
+            this.grbxdatos.TabStop = false;
+            this.grbxdatos.Text = "Datos";
             // 
-            // button3
+            // btnguardar
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.MenuText;
-            this.button3.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(547, 123);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 47);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnguardar.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnguardar.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguardar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnguardar.Location = new System.Drawing.Point(547, 123);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(135, 47);
+            this.btnguardar.TabIndex = 8;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnmodificar
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.MenuText;
-            this.button2.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(547, 176);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 47);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnmodificar.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnmodificar.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmodificar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnmodificar.Location = new System.Drawing.Point(547, 176);
+            this.btnmodificar.Name = "btnmodificar";
+            this.btnmodificar.Size = new System.Drawing.Size(135, 47);
+            this.btnmodificar.TabIndex = 7;
+            this.btnmodificar.Text = "Modificar";
+            this.btnmodificar.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnlimpiar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuText;
-            this.button1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(547, 229);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 47);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Limpiar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnlimpiar.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnlimpiar.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlimpiar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnlimpiar.Location = new System.Drawing.Point(547, 229);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(135, 47);
+            this.btnlimpiar.TabIndex = 6;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = false;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // label1
             // 
@@ -120,13 +121,13 @@ namespace Ejercicio1___Guía4_MM200149
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
-            // dataGridView1
+            // dtgvdatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 375);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(652, 149);
-            this.dataGridView1.TabIndex = 9;
+            this.dtgvdatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvdatos.Location = new System.Drawing.Point(30, 375);
+            this.dtgvdatos.Name = "dtgvdatos";
+            this.dtgvdatos.Size = new System.Drawing.Size(652, 149);
+            this.dtgvdatos.TabIndex = 9;
             // 
             // label2
             // 
@@ -148,37 +149,40 @@ namespace Ejercicio1___Guía4_MM200149
             this.label3.TabIndex = 2;
             this.label3.Text = "Código";
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 41);
-            this.textBox1.TabIndex = 3;
+            this.txtnombre.Location = new System.Drawing.Point(150, 63);
+            this.txtnombre.MaxLength = 20;
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(175, 41);
+            this.txtnombre.TabIndex = 3;
             // 
-            // textBox2
+            // txtusuario
             // 
-            this.textBox2.Location = new System.Drawing.Point(150, 113);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 41);
-            this.textBox2.TabIndex = 4;
+            this.txtusuario.Location = new System.Drawing.Point(150, 113);
+            this.txtusuario.MaxLength = 10;
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(175, 41);
+            this.txtusuario.TabIndex = 4;
             // 
-            // textBox3
+            // txtcodigo
             // 
-            this.textBox3.Location = new System.Drawing.Point(150, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(175, 41);
-            this.textBox3.TabIndex = 5;
+            this.txtcodigo.Location = new System.Drawing.Point(150, 165);
+            this.txtcodigo.MaxLength = 8;
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(175, 41);
+            this.txtcodigo.TabIndex = 5;
             // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(725, 547);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.dtgvdatos);
+            this.Controls.Add(this.btnguardar);
+            this.Controls.Add(this.btnmodificar);
+            this.Controls.Add(this.btnlimpiar);
+            this.Controls.Add(this.grbxdatos);
             this.Controls.Add(this.btnsalir);
             this.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -187,9 +191,9 @@ namespace Ejercicio1___Guía4_MM200149
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormBase_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.grbxdatos.ResumeLayout(false);
+            this.grbxdatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdatos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -197,17 +201,17 @@ namespace Ejercicio1___Guía4_MM200149
         #endregion
 
         protected System.Windows.Forms.Button btnsalir;
-        private System.Windows.Forms.GroupBox groupBox1;
-        protected System.Windows.Forms.Button button3;
-        protected System.Windows.Forms.Button button2;
-        protected System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox grbxdatos;
+        protected System.Windows.Forms.Button btnguardar;
+        protected System.Windows.Forms.Button btnmodificar;
+        protected System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.TextBox txtcodigo;
+        private System.Windows.Forms.TextBox txtusuario;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvdatos;
     }
 }
 

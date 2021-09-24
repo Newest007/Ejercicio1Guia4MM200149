@@ -31,5 +31,13 @@ namespace Ejercicio1___Guía4_MM200149
         {
 
         }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            txtcodigo.Clear();
+            txtnombre.Clear();
+            txtusuario.Clear();
+                
+        }
     }
 }
