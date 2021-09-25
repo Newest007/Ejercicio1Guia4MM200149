@@ -27,8 +27,23 @@ namespace Ejercicio1___Guía4_MM200149
             Application.Exit();
         }
 
+        private List<Docente> Docentes = new List<Docente>();
+        int edit_indice = -1;
+
+        private void ActualizarGrid()
+        {
+            dtgvdocentes.DataSource = null;
+            dtgvdocentes.DataSource = Docentes;
+        }
+
+
         private void btnguardar_Click(object sender, EventArgs e)
         {
+            Docente doc = new Docente();
+            doc.Nombre = txtnombre.Text;
+            doc.Usuario = txtusuario.Text;
+
+
 
         }
 
