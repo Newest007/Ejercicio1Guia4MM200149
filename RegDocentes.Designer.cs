@@ -49,10 +49,12 @@ namespace Ejercicio1___Guía4_MM200149
             // btnmodificar
             // 
             this.btnmodificar.Location = new System.Drawing.Point(547, 171);
+            this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
             // 
             // btnlimpiar
             // 
             this.btnlimpiar.Location = new System.Drawing.Point(547, 224);
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // grbxdatos
             // 
@@ -102,6 +104,8 @@ namespace Ejercicio1___Guía4_MM200149
             this.dtgvdocentes.Name = "dtgvdocentes";
             this.dtgvdocentes.Size = new System.Drawing.Size(494, 174);
             this.dtgvdocentes.TabIndex = 12;
+            this.dtgvdocentes.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdocentes_CellContentDoubleClick);
+            this.dtgvdocentes.DoubleClick += new System.EventHandler(this.dtgvdocentes_DoubleClick);
             // 
             // RegDocentes
             // 
