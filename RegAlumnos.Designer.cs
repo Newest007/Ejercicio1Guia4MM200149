@@ -64,7 +64,7 @@ namespace Ejercicio1___Guía4_MM200149
             // 
             // dtgvalumnos
             // 
-            this.dtgvalumnos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtgvalumnos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvalumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvalumnos.Location = new System.Drawing.Point(143, 375);
             this.dtgvalumnos.Name = "dtgvalumnos";

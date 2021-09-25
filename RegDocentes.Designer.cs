@@ -98,7 +98,7 @@ namespace Ejercicio1___Guía4_MM200149
             // 
             // dtgvdocentes
             // 
-            this.dtgvdocentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtgvdocentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvdocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvdocentes.Location = new System.Drawing.Point(112, 378);
             this.dtgvdocentes.Name = "dtgvdocentes";

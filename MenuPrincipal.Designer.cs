@@ -99,7 +99,7 @@ namespace Ejercicio1___Guía4_MM200149
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 334);
+            this.ClientSize = new System.Drawing.Size(691, 343);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnalumnos);
