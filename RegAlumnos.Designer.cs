@@ -66,9 +66,9 @@ namespace Ejercicio1___Guía4_MM200149
             // 
             this.dtgvalumnos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgvalumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvalumnos.Location = new System.Drawing.Point(34, 373);
+            this.dtgvalumnos.Location = new System.Drawing.Point(143, 375);
             this.dtgvalumnos.Name = "dtgvalumnos";
-            this.dtgvalumnos.Size = new System.Drawing.Size(637, 145);
+            this.dtgvalumnos.Size = new System.Drawing.Size(456, 145);
             this.dtgvalumnos.TabIndex = 11;
             this.dtgvalumnos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvalumnos_CellDoubleClick);
             // 

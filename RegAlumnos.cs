@@ -58,9 +58,6 @@ namespace Ejercicio1___Guía4_MM200149
             }
 
             ActualizarGrid();
-            txtnombre.Clear();
-            txtusuario.Clear();
-            txtcodigo.Clear();
 
             MessageBox.Show("Datos Ingresados correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -97,6 +94,8 @@ namespace Ejercicio1___Guía4_MM200149
 
         private void btnmodificar_Click(object sender, EventArgs e)
         {
+
+            MessageBox.Show("Presione doble click sobre la fila que desea modificar", "Atención!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
     }

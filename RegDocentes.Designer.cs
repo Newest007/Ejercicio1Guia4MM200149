@@ -32,7 +32,9 @@ namespace Ejercicio1___Guía4_MM200149
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtmateria = new System.Windows.Forms.TextBox();
+            this.dtgvdocentes = new System.Windows.Forms.DataGridView();
             this.grbxdatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdocentes)).BeginInit();
             this.SuspendLayout();
             // 
             // btnsalir
@@ -92,11 +94,21 @@ namespace Ejercicio1___Guía4_MM200149
             this.txtmateria.Size = new System.Drawing.Size(175, 41);
             this.txtmateria.TabIndex = 7;
             // 
+            // dtgvdocentes
+            // 
+            this.dtgvdocentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtgvdocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvdocentes.Location = new System.Drawing.Point(112, 378);
+            this.dtgvdocentes.Name = "dtgvdocentes";
+            this.dtgvdocentes.Size = new System.Drawing.Size(494, 174);
+            this.dtgvdocentes.TabIndex = 12;
+            // 
             // RegDocentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 578);
+            this.Controls.Add(this.dtgvdocentes);
             this.Controls.Add(this.label4);
             this.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.Name = "RegDocentes";
@@ -109,8 +121,10 @@ namespace Ejercicio1___Guía4_MM200149
             this.Controls.SetChildIndex(this.btnmodificar, 0);
             this.Controls.SetChildIndex(this.btnguardar, 0);
             this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.dtgvdocentes, 0);
             this.grbxdatos.ResumeLayout(false);
             this.grbxdatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdocentes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,5 +135,6 @@ namespace Ejercicio1___Guía4_MM200149
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtmateria;
+        private System.Windows.Forms.DataGridView dtgvdocentes;
     }
 }
