@@ -39,5 +39,26 @@ namespace Ejercicio1___Guía4_MM200149
             txtusuario.Clear();
                 
         }
+
+
+
+        
+        private void dtgvdatos_DoubleClick(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+
+        private void btnguardar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dtgvRegistros_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -31,18 +31,16 @@ namespace Ejercicio1___Guía4_MM200149
         {
             this.btnsalir = new System.Windows.Forms.Button();
             this.grbxdatos = new System.Windows.Forms.GroupBox();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
+            this.txtusuario = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnguardar = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btnlimpiar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtgvdatos = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.txtusuario = new System.Windows.Forms.TextBox();
-            this.txtcodigo = new System.Windows.Forms.TextBox();
             this.grbxdatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvdatos)).BeginInit();
             this.SuspendLayout();
             // 
             // btnsalir
@@ -74,6 +72,60 @@ namespace Ejercicio1___Guía4_MM200149
             this.grbxdatos.TabStop = false;
             this.grbxdatos.Text = "Datos";
             // 
+            // txtcodigo
+            // 
+            this.txtcodigo.Location = new System.Drawing.Point(150, 165);
+            this.txtcodigo.MaxLength = 8;
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(175, 41);
+            this.txtcodigo.TabIndex = 5;
+            // 
+            // txtusuario
+            // 
+            this.txtusuario.Location = new System.Drawing.Point(150, 113);
+            this.txtusuario.MaxLength = 10;
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(175, 41);
+            this.txtusuario.TabIndex = 4;
+            // 
+            // txtnombre
+            // 
+            this.txtnombre.Location = new System.Drawing.Point(150, 63);
+            this.txtnombre.MaxLength = 20;
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(175, 41);
+            this.txtnombre.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(38, 172);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 28);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Código";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(32, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 28);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Usuario";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre";
+            // 
             // btnguardar
             // 
             this.btnguardar.BackColor = System.Drawing.SystemColors.MenuText;
@@ -85,6 +137,7 @@ namespace Ejercicio1___Guía4_MM200149
             this.btnguardar.TabIndex = 8;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = false;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // btnmodificar
             // 
@@ -111,74 +164,11 @@ namespace Ejercicio1___Guía4_MM200149
             this.btnlimpiar.UseVisualStyleBackColor = false;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
-            // 
-            // dtgvdatos
-            // 
-            this.dtgvdatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvdatos.Location = new System.Drawing.Point(30, 375);
-            this.dtgvdatos.Name = "dtgvdatos";
-            this.dtgvdatos.Size = new System.Drawing.Size(652, 149);
-            this.dtgvdatos.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Usuario";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(38, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 28);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Código";
-            // 
-            // txtnombre
-            // 
-            this.txtnombre.Location = new System.Drawing.Point(150, 63);
-            this.txtnombre.MaxLength = 20;
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(175, 41);
-            this.txtnombre.TabIndex = 3;
-            // 
-            // txtusuario
-            // 
-            this.txtusuario.Location = new System.Drawing.Point(150, 113);
-            this.txtusuario.MaxLength = 10;
-            this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(175, 41);
-            this.txtusuario.TabIndex = 4;
-            // 
-            // txtcodigo
-            // 
-            this.txtcodigo.Location = new System.Drawing.Point(150, 165);
-            this.txtcodigo.MaxLength = 8;
-            this.txtcodigo.Name = "txtcodigo";
-            this.txtcodigo.Size = new System.Drawing.Size(175, 41);
-            this.txtcodigo.TabIndex = 5;
-            // 
             // FormBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 547);
-            this.Controls.Add(this.dtgvdatos);
+            this.ClientSize = new System.Drawing.Size(725, 525);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnlimpiar);
@@ -193,7 +183,6 @@ namespace Ejercicio1___Guía4_MM200149
             this.Load += new System.EventHandler(this.FormBase_Load);
             this.grbxdatos.ResumeLayout(false);
             this.grbxdatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvdatos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,17 +190,16 @@ namespace Ejercicio1___Guía4_MM200149
         #endregion
 
         protected System.Windows.Forms.Button btnsalir;
-        private System.Windows.Forms.GroupBox grbxdatos;
         protected System.Windows.Forms.Button btnguardar;
         protected System.Windows.Forms.Button btnmodificar;
         protected System.Windows.Forms.Button btnlimpiar;
-        private System.Windows.Forms.TextBox txtcodigo;
-        private System.Windows.Forms.TextBox txtusuario;
-        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgvdatos;
+        protected System.Windows.Forms.GroupBox grbxdatos;
+        public System.Windows.Forms.TextBox txtcodigo;
+        public System.Windows.Forms.TextBox txtusuario;
+        public System.Windows.Forms.TextBox txtnombre;
     }
 }
 

@@ -26,5 +26,11 @@ namespace Ejercicio1___Guía4_MM200149
         {
             Application.Exit();
         }
+
+        private void btnguardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

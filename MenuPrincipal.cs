@@ -19,7 +19,6 @@ namespace Ejercicio1___Guía4_MM200149
 
         private void btnsalir_Click(object sender, EventArgs e)
         {
-
             if (MessageBox.Show("¿Desea salir del programa?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
                 Application.Exit();
